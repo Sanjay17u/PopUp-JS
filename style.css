@@ -24,7 +24,7 @@ button {
 }
 
 
-.closePopup {
+.popup-open .popup {
     transform: scale(1);
     left: 50%;
     top: 50%;
@@ -47,3 +47,14 @@ button {
     font-weight: 400;
 }
 
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.popup-open .overlay {
+    display: block;
+}
